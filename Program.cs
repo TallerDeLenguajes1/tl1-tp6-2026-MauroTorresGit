@@ -1,5 +1,6 @@
-﻿int numero1, numero2, operacion, resultado=0;
+﻿double numero1, valorAbs, seno, coseno, cuadrado, raiz;
 
+/*Console.WriteLine("Ingrese una operacion:");
 Console.WriteLine("Ingrese una operacion:");
 Console.WriteLine("1- Suma");
 Console.WriteLine("2- Resta");
@@ -10,24 +11,40 @@ if (!int.TryParse(entrada, out operacion))
 {
     Console.WriteLine("Error en la operacion elegida");
     return;
-}
+}*/
 
-Console.WriteLine("Ingrese los operando:");
+Console.WriteLine("Ingrese un numero:");
 string? n1 = Console.ReadLine();
-if (!int.TryParse(n1, out numero1))
+if (!double.TryParse(n1, out numero1))
 {
     Console.WriteLine("Error en el operando 1");
     return;
 }
+else
+{
+    valorAbs = Math.Abs(numero1);
+    cuadrado = Math.Pow(numero1, 2);
+    raiz = Math.Sqrt(numero1);
+    seno = Math.Sin(Math.PI/(180/numero1));
+    coseno = Math.Sin(Math.PI/(180/numero1));
 
-string? n2 = Console.ReadLine();
+    Console.WriteLine("Valor absoluto: " + valorAbs);
+    Console.WriteLine("Cuadrado: " + cuadrado);
+    Console.WriteLine("Raiz: " + raiz);
+    Console.WriteLine("seno: " + seno);
+    Console.WriteLine("coseno: " + coseno);
+    
+}
+
+
+/*string? n2 = Console.ReadLine();
 if (!int.TryParse(n2, out numero2))
 {
     Console.WriteLine("Error en el operando 2");
     return;
-}
+}*/
 
-switch (operacion)
+/*switch (operacion)
 {
     case 1:
         resultado = numero1 + numero2;
@@ -43,5 +60,5 @@ switch (operacion)
         break;
 }
 
-Console.WriteLine("Resultado: " + resultado.ToString());
+Console.WriteLine("Resultado: " + resultado.ToString());*/
 
