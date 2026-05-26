@@ -1,4 +1,4 @@
-﻿double numero1, valorAbs, seno, coseno, cuadrado, raiz;
+﻿double numero1, valorAbs, seno, coseno, cuadrado, raiz,n=0;
 
 /*Console.WriteLine("Ingrese una operacion:");
 Console.WriteLine("Ingrese una operacion:");
